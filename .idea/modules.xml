@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bps-tooling.iml" filepath="$PROJECT_DIR$/bps-tooling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/bpmn/org.wso2.bps.tooling.bpmn.extension/org.wso2.bps.tooling.bpmn.extension.iml" filepath="$PROJECT_DIR$/plugins/bpmn/org.wso2.bps.tooling.bpmn.extension/org.wso2.bps.tooling.bpmn.extension.iml" />
+    </modules>
+  </component>
+</project>
