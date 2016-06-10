@@ -21,7 +21,7 @@ public interface SOAPConstants {
 	public static final String PALETTE_WSO2 = "WSO2 Tasks";
 
 	// Icons
-	public static final String ICONS_SOAP_TASK = "icons/task.png";
+	public static final String ICONS_SOAP_TASK = "icons/soap_icon.png";
 
 	// SOAP Task Related constants.
 	public static final String SOAP_TASK_NAME = "SOAP Task";
