@@ -33,20 +33,20 @@ public interface SOAPConstants {
 	public static final String SERVICE_URL_LABEL = "Service URL";
 	public static final String SERVICE_URL_HELP = "Service URL";
 	public static final String SERVICE_URL_HELP_LONG =
-			"This parameter can be used to give a URL of a SOAP service endpoint, which cannot be changed after deployment. Supports expressions.\n" +
-					"\n Eg : http://10.100.4.192:9763/services/HelloService";
+			"This parameter can be used to give a URL of a SOAP service endpoint, which cannot be changed after deployment. Supports expressions and string values.\n" +
+					"\n\n \r Eg : http://10.100.4.192:9763/services/HelloService";
 
 	//input payload
 	public static final String INPUT_LABEL = "Input Payload";
 	public static final String INPUT_HELP = "Input Payload";
-	public static final String INPUT_HELP_LONG = "Input payload for the SOAP invocation. Support Expressions. This payload is attached to the " +
-			"SOAP Body when creating the SOAP request. Give the payload as an xml string.";
+	public static final String INPUT_HELP_LONG = "Input payload for the SOAP invocation. Supports expressions and string values. This payload is attached to the " +
+			"SOAP Body when creating the SOAP request. Give the payload as a xml string.";
 
 	// header block
 	public static final String HEADER_BLOCK_LABEL = "SOAP Headers";
 	public static final String HEADER_BLOCK_HELP = "SOAP Headers";
-	public static final String HEADER_BLOCK_HELP_LONG = "Header block attached to the SOAP Header when creating the SOAP request. Support Expressions.\n" +
-			"Give the payload as an xml string.";
+	public static final String HEADER_BLOCK_HELP_LONG = "Header block attached to the SOAP Header when creating the SOAP request. Supports expressions and fixed values.\n" +
+			"Give the payload as a xml string.";
 
 	// output variable to store the response
 	public static final String OUTPUT_VARIABLE_LABEL = "Output Variable name";
@@ -64,15 +64,15 @@ public interface SOAPConstants {
 	public static final String HTTP_CONNECTION_LABEL = "HTTP Connection";
 	public static final String HTTP_CONNECTION_HELP = "HTTP Connection";
 	public static final String HTTP_CONNECTION_HELP_LONG =
-			"HTTP Connection attribute value needed for the HTTP transport headers. Control options for the current connection.\n" +
-					" \n Defined values for the attribute are :keep-alive (set as the default value), close ";
+			"HTTP Connection attribute value needed for the HTTP transport headers. Control options for the current connection. Supports expressions and fixed values. \n" +
+					" \n\r Defined values for the attribute are :keep-alive (set as the default value), close ";
 
 	// http transfer encoding
 	public static final String HTTP_TRANSFER_ENCODING_LABEL = "HTTP Transfer Encoding";
 	public static final String HTTP_TRANSFER_ENCODING_HELP = "HTTP Transfer Encoding";
 	public static final String HTTP_TRANSFER_ENCODING_HELP_LONG =
-			"HTTP Transfer Encoding attribute value needed for the HTTP transport headers.\n"+
-					"\n Defined values for the attribute are : chunked(set as the default value), compress, deflate, gzip, identity.";
+			"HTTP Transfer Encoding attribute value needed for the HTTP transport headers. Supports expressions and fixed values. \n"+
+					"\n\r Defined values for the attribute are : chunked(set as the default value), compress, deflate, gzip, identity.";
 
 	// soap action
 	public static final String SOAP_ACTION_LABEL = "Soap action";
@@ -83,8 +83,9 @@ public interface SOAPConstants {
 	// custom transport headers
 	public static final String TRANSPORT_HEADERS_LABEL = "Transport headers";
 	public static final String TRANSPORT_HEADERS_HELP = "Transport headers";
-	public static final String TRANSPORT_HEADERS_HELP_LONG = "Additional transport headers apart from Connection and Transfer-Encoding. Support Expressions.\n"+
-			"\n The additional HTTP headers should be given in the format : headerName1:headerValue1, headerName2:headerValue2";
+	public static final String TRANSPORT_HEADERS_HELP_LONG = "Additional transport headers apart from Connection and Transfer-Encoding. Supports expressions and fixed values.\n"+
+			"\n\r The additional HTTP headers should be given in the format : headerName1:headerValue1, headerName2:headerValue2." +
+			"\n\r Eg: Pragma: no-cache,Cache-Control: no-cache ";
 
 
 	public static final String SOAP11_LABEL = "soap11";
