@@ -25,7 +25,7 @@ import org.activiti.designer.integration.servicetask.PropertyType;
 /**
  * SOAP Task Activity Designer implementation.
  *
- * @See org.wso2.carbon.bpmn.extensions.SOAPTask
+ * @See org.wso2.carbon.bpmn.extensions.soap.SOAPTask
  */
 @Runtime(javaDelegateClass = SOAPConstants.SOAP_TASK_CLASS)
 @Help(displayHelpShort = SOAPConstants.SOAP_TASK_HELP, displayHelpLong = SOAPConstants.SOAP_TASK_HELP_LONG)

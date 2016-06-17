@@ -25,7 +25,7 @@ public interface SOAPConstants {
 
 	// SOAP Task Related constants.
 	public static final String SOAP_TASK_NAME = "SOAP Task";
-	public static final String SOAP_TASK_CLASS = "org.wso2.carbon.bpmn.extensions.SOAPTask";
+	public static final String SOAP_TASK_CLASS = "org.wso2.carbon.bpmn.extensions.soap.SOAPTask";
 	public static final String SOAP_TASK_HELP = "Invokes the SOAP client";
 	public static final String SOAP_TASK_HELP_LONG = "Provides SOAP service or partner service invocation support within BPMN processes.";
 
