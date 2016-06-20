@@ -53,7 +53,6 @@ public class SOAPTask extends AbstractCustomServiceTask {
 	@Help(displayHelpShort = SOAPConstants.SERVICE_URL_HELP, displayHelpLong = SOAPConstants.SERVICE_URL_HELP_LONG)
 	private String serviceURL;
 
-	//input
 	/**
 	 * @See SOAPConstants.INPUT_HELP_LONG
 	 */
@@ -61,14 +60,12 @@ public class SOAPTask extends AbstractCustomServiceTask {
 
 	@Help(displayHelpShort = SOAPConstants.INPUT_HELP, displayHelpLong = SOAPConstants.INPUT_HELP_LONG) private String payload;
 
-	//header block
 	/**
 	 * @See SOAPConstants.HEADER_BLOCK_HELP_LONG
 	 */
 	@Property(type = PropertyType.MULTILINE_TEXT, displayName = SOAPConstants.HEADER_BLOCK_LABEL, required = false)
 	@Help(displayHelpShort = SOAPConstants.HEADER_BLOCK_HELP, displayHelpLong = SOAPConstants.HEADER_BLOCK_HELP_LONG) private String headers;
 
-	//soap version
 	/**
 	 * @See SOAPConstants.SOAP_VERSION_HELP_LONG
 	 */
@@ -77,7 +74,6 @@ public class SOAPTask extends AbstractCustomServiceTask {
 	@Help(displayHelpShort = SOAPConstants.SOAP_VERSION_HELP, displayHelpLong = SOAPConstants.SOAP_VERSION_HELP_LONG)
 	private String soapVersion;
 
-	//http connection
 	/**
 	 * @See SOAPConstants.HTTP_CONNECTION_HELP_LONG
 	 */
@@ -86,36 +82,31 @@ public class SOAPTask extends AbstractCustomServiceTask {
 	private String httpConnection;
 
 
-	//http transfer encoding
 	/**
 	 * @See SOAPConstants.HTTP_TRANSFER_ENCODING_HELP_LONG
 	 */
 	@Property(type = PropertyType.TEXT, displayName = SOAPConstants.HTTP_TRANSFER_ENCODING_LABEL, required = false)
-
 	@Help(displayHelpShort = SOAPConstants.HTTP_TRANSFER_ENCODING_HELP, displayHelpLong = SOAPConstants.HTTP_TRANSFER_ENCODING_HELP_LONG)
 	private String httpTransferEncoding;
 
-	// output variable
+	/**
+	 * @See SOAPConstants.OUTPUT_VARIABLE_HELP_LONG
+	 */
 	@Property(type = PropertyType.TEXT, displayName = SOAPConstants.OUTPUT_VARIABLE_LABEL, required = false)
-
 	@Help(displayHelpShort = SOAPConstants.OUTPUT_VARIABLE_HELP, displayHelpLong = SOAPConstants.OUTPUT_VARIABLE_HELP_LONG)
 	private String outputVariable;
 
-	//soap action
 	/**
 	 * @See SOAPConstants.SOAP_ACTION_HELP_LONG
 	 */
 	@Property(type = PropertyType.TEXT, displayName = SOAPConstants.SOAP_ACTION_LABEL, required = false)
-
 	@Help(displayHelpShort = SOAPConstants.SOAP_ACTION_HELP, displayHelpLong = SOAPConstants.SOAP_ACTION_HELP_LONG)
 	private String soapAction;
 
-	//http custom transport headers
 	/**
-	 * @See SOAPConstants.INPUT_HELP_LONG
+	 * @See SOAPConstants.TRANSPORT_HEADERS_HELP_LONG
 	 */
 	@Property(type = PropertyType.MULTILINE_TEXT, displayName = SOAPConstants.TRANSPORT_HEADERS_LABEL, required = false)
-
 	@Help(displayHelpShort = SOAPConstants.TRANSPORT_HEADERS_HELP, displayHelpLong = SOAPConstants.TRANSPORT_HEADERS_HELP_LONG)
 	private String transportHeaders;
 

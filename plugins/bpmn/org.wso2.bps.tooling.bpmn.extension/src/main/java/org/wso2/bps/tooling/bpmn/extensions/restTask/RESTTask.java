@@ -79,7 +79,8 @@ public class RESTTask extends AbstractCustomServiceTask {
     @Property(type = PropertyType.COMBOBOX_CHOICE, displayName = RESTConstants.METHOD_LABEL, required = true)
     @Help(displayHelpShort = RESTConstants.METHOD_HELP, displayHelpLong = RESTConstants.METHOD_HELP_LONG) @PropertyItems(
             { RESTConstants.METHOD_GET_LABEL, RESTConstants.METHOD_GET_VALUE, RESTConstants.METHOD_POST_LABEL,
-                    RESTConstants.METHOD_POST_VALUE }) private String method;
+                    RESTConstants.METHOD_POST_VALUE, RESTConstants.METHOD_PUT_LABEL, RESTConstants.METHOD_PUT_VALUE,
+                    RESTConstants.METHOD_DELETE_LABEL, RESTConstants.METHOD_DELETE_VALUE }) private String method;
 
     /**
      * @See RESTConstants.INPUT_HELP_LONG
@@ -87,6 +88,9 @@ public class RESTTask extends AbstractCustomServiceTask {
     @Property(type = PropertyType.MULTILINE_TEXT, displayName = RESTConstants.INPUT_LABEL, required = false)
     @Help(displayHelpShort = RESTConstants.INPUT_HELP, displayHelpLong = RESTConstants.INPUT_HELP_LONG) private String input;
 
+    /**
+     * @See RESTConstants.OUTPUT_VARIABLE_HELP_LONG
+     */
     @Property(type = PropertyType.TEXT, displayName = RESTConstants.OUTPUT_VARIABLE_LABEL, required = false)
     @Help(displayHelpShort = RESTConstants.OUTPUT_VARIABLE_HELP, displayHelpLong = RESTConstants.OUTPUT_VARIABLE_HELP_LONG)
     private String outputVariable;
@@ -97,5 +101,12 @@ public class RESTTask extends AbstractCustomServiceTask {
     @Property(type = PropertyType.TEXT, displayName = RESTConstants.OUTPUT_VARIABLE_MAPPING_LABEL, required = false)
     @Help(displayHelpShort = RESTConstants.OUTPUT_VARIABLE_MAPPING_HELP,
             displayHelpLong = RESTConstants.OUTPUT_VARIABLE_MAPPING_HELP_LONG) private String outputMappings;
+
+    /**
+     * @See RESTConstants.TRANSPORT_HEADERS_HELP_LONG
+     */
+    @Property(type = PropertyType.MULTILINE_TEXT, displayName = RESTConstants.HEADERS_LABEL, required = false)
+    @Help(displayHelpShort = RESTConstants.HEADERS_HELP, displayHelpLong = RESTConstants.HEADERS_HELP_LONG)
+    private String headers;
 
 }

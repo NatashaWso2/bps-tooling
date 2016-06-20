@@ -17,7 +17,7 @@ package org.wso2.bps.tooling.bpmn.extensions.restTask;
 
 public interface RESTConstants {
 
-        // Palette Reheated constants.
+        // Palette Related constants.
         public static final String PALETTE_WSO2 = "WSO2 Tasks";
 
         // Icons
@@ -56,10 +56,14 @@ public interface RESTConstants {
         public static final String METHOD_GET_VALUE = "GET";
         public static final String METHOD_POST_LABEL = "POST";
         public static final String METHOD_POST_VALUE = "POST";
+        public static final String METHOD_PUT_LABEL = "PUT";
+        public static final String METHOD_PUT_VALUE = "PUT";
+        public static final String METHOD_DELETE_LABEL = "DELETE";
+        public static final String METHOD_DELETE_VALUE = "DELETE";
         public static final String METHOD_LABEL = "HTTP method";
         public static final String METHOD_HELP = "HTTP method";
         public static final String METHOD_HELP_LONG =
-                "HTTP method that need to be used for Rest service invocation. Support GET and POST";
+                "HTTP method that need to be used for Rest service invocation. Support GET, POST, PUT and DELETE";
 
         public static final String INPUT_LABEL = "Input Payload";
         public static final String INPUT_HELP = "Input Payload";
@@ -77,4 +81,9 @@ public interface RESTConstants {
                         "<br/> Support only for JSON. Format: VariableName1:JSON_PATH1,VariableName2:JSON_PATH2" +
                         "<br/> Eg: var2:customer.name,var3:item.price";
 
+        public static final String HEADERS_LABEL = "Transport headers";
+        public static final String HEADERS_HELP = "Transport headers";
+        public static final String HEADERS_HELP_LONG = "Additional headers. Supports expressions and fixed values.\n"+
+                "\n\r The headers should be given in the format : headerName1:headerValue1, headerName2:headerValue2." +
+                "\n\r Eg: Content-Type:application/json,Accept:application/json ";
     }
